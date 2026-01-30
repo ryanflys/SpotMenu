@@ -1,0 +1,50 @@
+/* Preferences Sections */
+"preferences.player" = "Player";
+"preferences.appearance" = "Appearance";
+"preferences.menuBar" = "Menu Bar";
+"preferences.shortcuts" = "Shortcuts";
+"preferences.about" = "About";
+"preferences.language" = "Language";
+
+/* Language Settings */
+"language.title" = "Language";
+"language.system" = "System Default";
+"language.english" = "English";
+"language.chinese" = "简体中文";
+"language.footer" = "Select your preferred language. Changes will take effect after restarting the app.";
+
+/* Menu Bar Preferences */
+"menuBar.textDisplay" = "Text Display";
+"menuBar.textDisplay.footer" = "Choose which text information to display in the menu bar.";
+"menuBar.displayArtist" = "Display Artist";
+"menuBar.hideArtistWhenPaused" = "Hide Artist When Paused";
+"menuBar.displayTitle" = "Display Title";
+"menuBar.longFormContent" = "Long-form Content";
+"menuBar.hideTitleWhenPaused" = "Hide Title When Paused";
+
+"menuBar.icons" = "Icons";
+"menuBar.icons.footer" = "Choose which icons to display in the menu bar.";
+"menuBar.icons.fallback" = "If nothing is currently visible based on your settings and playback status, the app icon will be shown as a fallback.";
+"menuBar.showPlayingIcon" = "Show Playing Icon";
+"menuBar.showLikedIcon" = "Show Liked Icon";
+"menuBar.displayAppIcon" = "Display App Icon";
+
+"menuBar.layout" = "Layout";
+"menuBar.layout.footer" = "Adjust the maximum width for the menu bar item.";
+"menuBar.compactView" = "Compact View";
+"menuBar.maxWidth" = "Max Width";
+
+"menuBar.fontWeights" = "Font Weights";
+"menuBar.fontWeights.footer.compact" = "Adjust font weights for the top and bottom rows in compact view.";
+"menuBar.fontWeights.footer.normal" = "Adjust font weight for menu bar text in normal view.";
+"menuBar.fontWeight.topRow" = "Font weight (top row)";
+"menuBar.fontWeight.bottomRow" = "Font weight (bottom row)";
+"menuBar.fontWeight" = "Font weight";
+
+"menuBar.preview" = "Preview";
+"menuBar.preview.footer" = "Maximum width shown. Actual width may be smaller depending on content.";
+
+/* Common */
+"common.quit" = "Quit SpotMenu";
+"common.selectSection" = "Select a section";
+"common.settings" = "Settings";

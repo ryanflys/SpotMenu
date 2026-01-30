@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,37 +12,6 @@
 		64134C342E05AF1E00EB3AE3 /* ISSUE_TEMPLATE.md in Resources */ = {isa = PBXBuildFile; fileRef = 64134C332E05AF1E00EB3AE3 /* ISSUE_TEMPLATE.md */; };
 		648D41AD2E02904C001D8CE5 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 648D41AC2E02904C001D8CE5 /* KeyboardShortcuts */; };
 		64SPARKLE012F00000000001 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 64SPARKLE012F00000000002 /* Sparkle */; };
-		APP00001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP00002 /* AppDelegate.swift */; };
-		APP00003 /* SpotMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP00004 /* SpotMenuApp.swift */; };
-		APP00005 /* UpdaterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP00006 /* UpdaterManager.swift */; };
-		PLAY0001 /* AppleMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = PLAY0002 /* AppleMusicController.swift */; };
-		PLAY0003 /* PlaybackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PLAY0004 /* PlaybackModel.swift */; };
-		PLAY0005 /* PlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PLAY0006 /* PlaybackView.swift */; };
-		PLAY0007 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PLAY0008 /* SliderView.swift */; };
-		PLAY0009 /* SpotifyAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = PLAY0010 /* SpotifyAuthManager.swift */; };
-		PLAY0011 /* SpotifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = PLAY0012 /* SpotifyController.swift */; };
-		PLAY0013 /* SpotifyLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PLAY0014 /* SpotifyLoginView.swift */; };
-		PLAY0015 /* SpotifyLoginWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = PLAY0016 /* SpotifyLoginWindowManager.swift */; };
-		PREF0001 /* AboutPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0002 /* AboutPreferencesView.swift */; };
-		PREF0003 /* KeyboardShortcuts+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0004 /* KeyboardShortcuts+Names.swift */; };
-		PREF0005 /* LanguagePreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0006 /* LanguagePreferencesModel.swift */; };
-		PREF0007 /* LanguagePreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0008 /* LanguagePreferencesView.swift */; };
-		PREF0009 /* MenuBarPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0010 /* MenuBarPreferencesModel.swift */; };
-		PREF0011 /* MenuBarPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0012 /* MenuBarPreferencesView.swift */; };
-		PREF0013 /* MusicPlayerPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0014 /* MusicPlayerPreferencesModel.swift */; };
-		PREF0015 /* MusicPlayerPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0016 /* MusicPlayerPreferencesView.swift */; };
-		PREF0017 /* PlaybackAppearancePreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0018 /* PlaybackAppearancePreferencesModel.swift */; };
-		PREF0019 /* PlaybackAppearancePreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0020 /* PlaybackAppearancePreferencesView.swift */; };
-		PREF0021 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0022 /* PreferencesView.swift */; };
-		PREF0023 /* ShortcutPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PREF0024 /* ShortcutPreferencesView.swift */; };
-		STAT0001 /* StatusItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = STAT0002 /* StatusItemModel.swift */; };
-		STAT0003 /* StatusItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = STAT0004 /* StatusItemView.swift */; };
-		UI000001 /* MenuBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = UI000002 /* MenuBuilder.swift */; };
-		UI000003 /* PopoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = UI000004 /* PopoverManager.swift */; };
-		UI000005 /* PopoverWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = UI000006 /* PopoverWindow.swift */; };
-		UI000007 /* StatusItemConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = UI000008 /* StatusItemConfigurator.swift */; };
-		ASSE0001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ASSE0002 /* Assets.xcassets */; };
-		LOC00001 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = LOC00003 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,41 +38,38 @@
 		648170E82DFF5D2B002F5F05 /* SpotMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		648170F62DFF5D2D002F5F05 /* SpotMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		648171002DFF5D2D002F5F05 /* SpotMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		APP00002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		APP00004 /* SpotMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMenuApp.swift; sourceTree = "<group>"; };
-		APP00006 /* UpdaterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdaterManager.swift; sourceTree = "<group>"; };
-		PLAY0002 /* AppleMusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicController.swift; sourceTree = "<group>"; };
-		PLAY0004 /* PlaybackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackModel.swift; sourceTree = "<group>"; };
-		PLAY0006 /* PlaybackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackView.swift; sourceTree = "<group>"; };
-		PLAY0008 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
-		PLAY0010 /* SpotifyAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAuthManager.swift; sourceTree = "<group>"; };
-		PLAY0012 /* SpotifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
-		PLAY0014 /* SpotifyLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginView.swift; sourceTree = "<group>"; };
-		PLAY0016 /* SpotifyLoginWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyLoginWindowManager.swift; sourceTree = "<group>"; };
-		PREF0002 /* AboutPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPreferencesView.swift; sourceTree = "<group>"; };
-		PREF0004 /* KeyboardShortcuts+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardShortcuts+Names.swift"; sourceTree = "<group>"; };
-		PREF0006 /* LanguagePreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePreferencesModel.swift; sourceTree = "<group>"; };
-		PREF0008 /* LanguagePreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePreferencesView.swift; sourceTree = "<group>"; };
-		PREF0010 /* MenuBarPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPreferencesModel.swift; sourceTree = "<group>"; };
-		PREF0012 /* MenuBarPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarPreferencesView.swift; sourceTree = "<group>"; };
-		PREF0014 /* MusicPlayerPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerPreferencesModel.swift; sourceTree = "<group>"; };
-		PREF0016 /* MusicPlayerPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerPreferencesView.swift; sourceTree = "<group>"; };
-		PREF0018 /* PlaybackAppearancePreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackAppearancePreferencesModel.swift; sourceTree = "<group>"; };
-		PREF0020 /* PlaybackAppearancePreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackAppearancePreferencesView.swift; sourceTree = "<group>"; };
-		PREF0022 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
-		PREF0024 /* ShortcutPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutPreferencesView.swift; sourceTree = "<group>"; };
-		STAT0002 /* StatusItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemModel.swift; sourceTree = "<group>"; };
-		STAT0004 /* StatusItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemView.swift; sourceTree = "<group>"; };
-		UI000002 /* MenuBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBuilder.swift; sourceTree = "<group>"; };
-		UI000004 /* PopoverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverManager.swift; sourceTree = "<group>"; };
-		UI000006 /* PopoverWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverWindow.swift; sourceTree = "<group>"; };
-		UI000008 /* StatusItemConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemConfigurator.swift; sourceTree = "<group>"; };
-		ASSE0002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		INFO0001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ENTL0001 /* SpotMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpotMenu.entitlements; sourceTree = "<group>"; };
-		LOC00002 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		LOC00004 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		64BA17CC2E003386007A0612 /* Exceptions for "SpotMenu" folder in "SpotMenu" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 648170E72DFF5D2B002F5F05 /* SpotMenu */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		648170EA2DFF5D2B002F5F05 /* SpotMenu */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				64BA17CC2E003386007A0612 /* Exceptions for "SpotMenu" folder in "SpotMenu" target */,
+			);
+			path = SpotMenu;
+			sourceTree = "<group>";
+		};
+		648170F92DFF5D2D002F5F05 /* SpotMenuTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpotMenuTests;
+			sourceTree = "<group>";
+		};
+		648171032DFF5D2D002F5F05 /* SpotMenuUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpotMenuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		648170E52DFF5D2B002F5F05 /* Frameworks */ = {
@@ -155,100 +121,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		648170EA2DFF5D2B002F5F05 /* SpotMenu */ = {
-			isa = PBXGroup;
-			children = (
-				APP00010 /* App */,
-				PLAY0020 /* Playback */,
-				PREF0030 /* Preferences */,
-				STAT0010 /* StatusItem */,
-				UI000010 /* UI */,
-				ASSE0002 /* Assets.xcassets */,
-				INFO0001 /* Info.plist */,
-				ENTL0001 /* SpotMenu.entitlements */,
-				LOC00003 /* Localizable.strings */,
-			);
-			path = SpotMenu;
-			sourceTree = "<group>";
-		};
-		648170F92DFF5D2D002F5F05 /* SpotMenuTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SpotMenuTests;
-			sourceTree = "<group>";
-		};
-		648171032DFF5D2D002F5F05 /* SpotMenuUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SpotMenuUITests;
-			sourceTree = "<group>";
-		};
-		APP00010 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				APP00002 /* AppDelegate.swift */,
-				APP00004 /* SpotMenuApp.swift */,
-				APP00006 /* UpdaterManager.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		PLAY0020 /* Playback */ = {
-			isa = PBXGroup;
-			children = (
-				PLAY0002 /* AppleMusicController.swift */,
-				PLAY0004 /* PlaybackModel.swift */,
-				PLAY0006 /* PlaybackView.swift */,
-				PLAY0008 /* SliderView.swift */,
-				PLAY0010 /* SpotifyAuthManager.swift */,
-				PLAY0012 /* SpotifyController.swift */,
-				PLAY0014 /* SpotifyLoginView.swift */,
-				PLAY0016 /* SpotifyLoginWindowManager.swift */,
-			);
-			path = Playback;
-			sourceTree = "<group>";
-		};
-		PREF0030 /* Preferences */ = {
-			isa = PBXGroup;
-			children = (
-				PREF0002 /* AboutPreferencesView.swift */,
-				PREF0004 /* KeyboardShortcuts+Names.swift */,
-				PREF0006 /* LanguagePreferencesModel.swift */,
-				PREF0008 /* LanguagePreferencesView.swift */,
-				PREF0010 /* MenuBarPreferencesModel.swift */,
-				PREF0012 /* MenuBarPreferencesView.swift */,
-				PREF0014 /* MusicPlayerPreferencesModel.swift */,
-				PREF0016 /* MusicPlayerPreferencesView.swift */,
-				PREF0018 /* PlaybackAppearancePreferencesModel.swift */,
-				PREF0020 /* PlaybackAppearancePreferencesView.swift */,
-				PREF0022 /* PreferencesView.swift */,
-				PREF0024 /* ShortcutPreferencesView.swift */,
-			);
-			path = Preferences;
-			sourceTree = "<group>";
-		};
-		STAT0010 /* StatusItem */ = {
-			isa = PBXGroup;
-			children = (
-				STAT0002 /* StatusItemModel.swift */,
-				STAT0004 /* StatusItemView.swift */,
-			);
-			path = StatusItem;
-			sourceTree = "<group>";
-		};
-		UI000010 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				UI000002 /* MenuBuilder.swift */,
-				UI000004 /* PopoverManager.swift */,
-				UI000006 /* PopoverWindow.swift */,
-				UI000008 /* StatusItemConfigurator.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +136,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				648170EA2DFF5D2B002F5F05 /* SpotMenu */,
 			);
 			name = SpotMenu;
 			packageProductDependencies = (
@@ -287,6 +162,9 @@
 			dependencies = (
 				648170F82DFF5D2D002F5F05 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				648170F92DFF5D2D002F5F05 /* SpotMenuTests */,
+			);
 			name = SpotMenuTests;
 			packageProductDependencies = (
 			);
@@ -307,6 +185,9 @@
 			dependencies = (
 				648171022DFF5D2D002F5F05 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				648171032DFF5D2D002F5F05 /* SpotMenuUITests */,
+			);
 			name = SpotMenuUITests;
 			packageProductDependencies = (
 			);
@@ -321,24 +202,23 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					648170E72DFF5D2B002F5F05 = {
-						CreatedOnToolsVersion = 15.4;
+						CreatedOnToolsVersion = 16.4;
 					};
 					648170F52DFF5D2D002F5F05 = {
-						CreatedOnToolsVersion = 15.4;
+						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 648170E72DFF5D2B002F5F05;
 					};
 					648170FF2DFF5D2D002F5F05 = {
-						CreatedOnToolsVersion = 15.4;
+						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 648170E72DFF5D2B002F5F05;
 					};
 				};
 			};
 			buildConfigurationList = 648170E32DFF5D2B002F5F05 /* Build configuration list for PBXProject "SpotMenu" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -347,10 +227,12 @@
 				"zh-Hans",
 			);
 			mainGroup = 648170DF2DFF5D2B002F5F05;
+			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				648D41A92E028FAF001D8CE5 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				64SPARKLE012F00000000003 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 648170E92DFF5D2B002F5F05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,8 +252,6 @@
 				64134C342E05AF1E00EB3AE3 /* ISSUE_TEMPLATE.md in Resources */,
 				64134C322E05AF1800EB3AE3 /* LICENSE in Resources */,
 				64134C302E05AF0E00EB3AE3 /* README.md in Resources */,
-				ASSE0001 /* Assets.xcassets in Resources */,
-				LOC00001 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,35 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				APP00001 /* AppDelegate.swift in Sources */,
-				APP00003 /* SpotMenuApp.swift in Sources */,
-				APP00005 /* UpdaterManager.swift in Sources */,
-				PLAY0001 /* AppleMusicController.swift in Sources */,
-				PLAY0003 /* PlaybackModel.swift in Sources */,
-				PLAY0005 /* PlaybackView.swift in Sources */,
-				PLAY0007 /* SliderView.swift in Sources */,
-				PLAY0009 /* SpotifyAuthManager.swift in Sources */,
-				PLAY0011 /* SpotifyController.swift in Sources */,
-				PLAY0013 /* SpotifyLoginView.swift in Sources */,
-				PLAY0015 /* SpotifyLoginWindowManager.swift in Sources */,
-				PREF0001 /* AboutPreferencesView.swift in Sources */,
-				PREF0003 /* KeyboardShortcuts+Names.swift in Sources */,
-				PREF0005 /* LanguagePreferencesModel.swift in Sources */,
-				PREF0007 /* LanguagePreferencesView.swift in Sources */,
-				PREF0009 /* MenuBarPreferencesModel.swift in Sources */,
-				PREF0011 /* MenuBarPreferencesView.swift in Sources */,
-				PREF0013 /* MusicPlayerPreferencesModel.swift in Sources */,
-				PREF0015 /* MusicPlayerPreferencesView.swift in Sources */,
-				PREF0017 /* PlaybackAppearancePreferencesModel.swift in Sources */,
-				PREF0019 /* PlaybackAppearancePreferencesView.swift in Sources */,
-				PREF0021 /* PreferencesView.swift in Sources */,
-				PREF0023 /* ShortcutPreferencesView.swift in Sources */,
-				STAT0001 /* StatusItemModel.swift in Sources */,
-				STAT0003 /* StatusItemView.swift in Sources */,
-				UI000001 /* MenuBuilder.swift in Sources */,
-				UI000003 /* PopoverManager.swift in Sources */,
-				UI000005 /* PopoverWindow.swift in Sources */,
-				UI000007 /* StatusItemConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,18 +327,6 @@
 			targetProxy = 648171012DFF5D2D002F5F05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		LOC00003 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				LOC00002 /* en */,
-				LOC00004 /* zh-Hans */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		648171082DFF5D2D002F5F05 /* Debug */ = {
