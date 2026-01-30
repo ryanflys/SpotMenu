@@ -10,6 +10,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var musicPlayerPreferencesModel = MusicPlayerPreferencesModel()
     var playbackModel: PlaybackModel!
     var menuBarPreferencesModel = MenuBarPreferencesModel()
+    var languagePreferencesModel = LanguagePreferencesModel()
     var popoverManager: PopoverManager!
     var preferencesWindow: NSWindow?
     var eventMonitor: Any?
@@ -193,7 +194,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     playbackModel: playbackModel,
                     musicPlayerPreferencesModel: musicPlayerPreferencesModel,
                     playbackAppearancePreferencesModel:
-                        playbackAppearancePreferencesModel
+                        playbackAppearancePreferencesModel,
+                    languagePreferencesModel: languagePreferencesModel
                 )
             )
 
