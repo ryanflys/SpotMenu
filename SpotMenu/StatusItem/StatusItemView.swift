@@ -62,7 +62,7 @@ struct StatusItemView: View {
                     Text(
                         model.buildText(
                             displayOptions: displayOptions,
-                            font: NSFont.systemFont(ofSize: 13),
+                            font: NSFont.systemFont(ofSize: 13)
                         )
                     )
                     .font(.system(size: 13, weight: menuBarPreferencesModel.fontWeightNormal.fontWeight))

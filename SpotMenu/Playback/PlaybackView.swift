@@ -77,6 +77,8 @@ struct PlaybackView: View {
         }
     }
 
+
+
     private var controlsOverlay: some View {
         VStack(spacing: 0) {
             HStack {
