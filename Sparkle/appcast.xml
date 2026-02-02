@@ -22,7 +22,7 @@
   <h2>🎉 SpotMenu 2.0 is Here!</h2>
   <p><strong>SpotMenu has been completely rebuilt from the ground up with SwiftUI!</strong></p>
   <p>This is a major update that requires a fresh download. Automatic updates are not available for this transition.</p>
-  <a href="https://kmikiy.github.io/SpotMenu/" class="download-btn">Download SpotMenu 2.0 →</a>
+  <a href="https://github.com/ryanflys/SpotMenu-CN/" class="download-btn">Download SpotMenu 2.0 →</a>
 </div>
 
 <div class="features">
@@ -41,7 +41,7 @@
   <h3>How to Update</h3>
   <ol>
     <li>Quit the current SpotMenu</li>
-    <li>Download SpotMenu 2.0 from <a href="https://kmikiy.github.io/SpotMenu/">kmikiy.github.io/SpotMenu</a></li>
+    <li>Download SpotMenu 2.0 from <a href="https://github.com/ryanflys/SpotMenu-CN/">kmikiy.github.io/SpotMenu</a></li>
     <li>Move the new SpotMenu to your Applications folder (replace the old one)</li>
     <li>Launch SpotMenu 2.0 and enjoy!</li>
   </ol>

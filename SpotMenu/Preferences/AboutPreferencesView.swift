@@ -92,7 +92,7 @@ struct AboutPreferencesView: View {
                     .buttonStyle(.link)
 
                     Button(action: {
-                        if let url = URL(string: "https://kmikiy.github.io/SpotMenu") {
+                        if let url = URL(string: "https://github.com/ryanflys/SpotMenu-CN") {
                             NSWorkspace.shared.open(url)
                         }
                     }) {
