@@ -1,8 +1,10 @@
-# SpotMenu
+# SpotMenu-CN
 
 **Spotify & Apple Music in your macOS menu bar**
 
 A minimalist menu bar utility that displays your currently playing track with playback controls, keyboard shortcuts, and a beautiful native UI. Built with Swift and SwiftUI.
+
+**中文版本** — 完整的简体中文界面支持，兼容 Xcode 15.4 和 macOS 13+
 
 ![Demo](https://github.com/user-attachments/assets/4b6b8e15-7180-44f1-abf7-796566a02fbb)
 
@@ -18,6 +20,7 @@ A minimalist menu bar utility that displays your currently playing track with pl
 - **Live Updates** — Automatically syncs with playback changes
 - **Multi-Player Support** — Auto-detect or manually select Spotify / Apple Music
 - **Fully Customizable** — Configure visuals, shortcuts, and behavior
+- **🇨🇳 Chinese Localization** — Full Simplified Chinese UI support with language switcher
 
 ---
 
@@ -25,25 +28,19 @@ A minimalist menu bar utility that displays your currently playing track with pl
 
 ### Download
 
-Get the latest release from [GitHub Releases](https://github.com/kmikiy/SpotMenu/releases/latest) and open `SpotMenu.app.zip`.
-
-The app is signed and notarized, and includes automatic updates via Sparkle.
-
-### Homebrew
-
-```sh
-brew install --cask spotmenu
-```
+Get the latest release from [GitHub Releases](https://github.com/ryanflys/SpotMenu-CN/releases/latest) and open `SpotMenu.app.zip`.
 
 ### Build from Source
 
-**Requirements:** macOS 13+ (Ventura), Xcode 15+
+**Requirements:** macOS 13+ (Ventura), Xcode 15.4+
 
 ```bash
-git clone https://github.com/kmikiy/SpotMenu.git
-cd SpotMenu
+git clone https://github.com/ryanflys/SpotMenu-CN.git
+cd SpotMenu-CN
 open SpotMenu.xcodeproj
 ```
+
+**Note:** This version is compatible with Xcode 15.4 and includes full Simplified Chinese localization.
 
 ---
 
@@ -62,6 +59,24 @@ To enable track liking/unliking, you need to set up a Spotify Developer App.
 6. Save and copy your **Client ID**
 7. In SpotMenu, go to **Preferences → Music Player** and enable Track Liking
 8. Paste your Client ID and complete the login flow
+
+---
+
+## Language / 语言
+
+SpotMenu-CN supports both English and Simplified Chinese.
+
+To change the language:
+1. Right-click the menu bar icon → **Preferences...**
+2. Go to **Language** section
+3. Select your preferred language (English / 简体中文)
+4. Restart the app
+
+**切换语言：**
+1. 右键点击菜单栏图标 → **偏好设置...**
+2. 进入**语言**部分
+3. 选择您喜欢的语言（English / 简体中文）
+4. 重启应用
 
 ---
 
@@ -115,12 +130,36 @@ Set global hotkeys for:
 
 ---
 
+## About This Version
+
+This is a Chinese localized fork of [SpotMenu](https://github.com/kmikiy/SpotMenu) by [@kmikiy](https://github.com/kmikiy).
+
+**Changes in SpotMenu-CN:**
+- ✅ Full Simplified Chinese localization for all UI elements
+- ✅ Downgraded to Xcode 15.4 compatibility
+- ✅ Removed automatic update feature
+- ✅ Updated dependencies for Swift 5.10 compatibility
+
+**关于此版本：**
+
+这是 [@kmikiy](https://github.com/kmikiy) 的 [SpotMenu](https://github.com/kmikiy/SpotMenu) 的中文本地化版本。
+
+**SpotMenu-CN 的改进：**
+- ✅ 所有界面元素的完整简体中文本地化
+- ✅ 降级至 Xcode 15.4 兼容性
+- ✅ 移除了自动更新功能
+- ✅ 更新依赖以兼容 Swift 5.10
+
+---
+
 ## Support
 
-If you find SpotMenu useful, consider [supporting development](https://paypal.me/kmikiy).
+If you find SpotMenu useful, consider supporting the original author [@kmikiy](https://paypal.me/kmikiy).
 
 ---
 
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
+Original project by [@kmikiy](https://github.com/kmikiy). Chinese localization and modifications by [@ryanflys](https://github.com/ryanflys).
