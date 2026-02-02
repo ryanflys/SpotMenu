@@ -10,12 +10,12 @@ struct PlaybackAppearancePreferencesView: View {
             VStack(alignment: .leading, spacing: 20) {
                 Form {
                     Section {
-                        ColorPicker("Hover Tint Color", selection: Binding(
+                        ColorPicker(NSLocalizedString("appearance.hoverTintColor", comment: ""), selection: Binding(
                             get: { Color(model.hoverTintColor) },
                             set: { model.hoverTintColor = NSColor($0) }
                         ))
 
-                        Picker("Foreground Color", selection: $model.foregroundColor) {
+                        Picker(NSLocalizedString("appearance.foregroundColor", comment: ""), selection: $model.foregroundColor) {
                             ForEach(
                                 PlaybackAppearancePreferencesModel.ForegroundColorOption
                                     .allCases
@@ -25,9 +25,9 @@ struct PlaybackAppearancePreferencesView: View {
                         }
                         .pickerStyle(.segmented)
                     } header: {
-                        Text("Colors")
+                        Text(NSLocalizedString("appearance.colors", comment: ""))
                     } footer: {
-                        Text("Customize the color scheme for the playback window.")
+                        Text(NSLocalizedString("appearance.colors.footer", comment: ""))
                     }
                 }
                 .formStyle(.grouped)
@@ -37,7 +37,7 @@ struct PlaybackAppearancePreferencesView: View {
                     Section {
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
-                                Text("Blur Intensity")
+                                Text(NSLocalizedString("appearance.blurIntensity", comment: ""))
                                 Spacer()
                                 Text(String(format: "%.0f%%", model.blurIntensity * 100))
                                     .foregroundStyle(.secondary)
@@ -48,7 +48,7 @@ struct PlaybackAppearancePreferencesView: View {
 
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
-                                Text("Hover Tint Opacity")
+                                Text(NSLocalizedString("appearance.hoverTintOpacity", comment: ""))
                                 Spacer()
                                 Text(String(format: "%.0f%%", model.hoverTintOpacity * 100))
                                     .foregroundStyle(.secondary)
@@ -57,9 +57,9 @@ struct PlaybackAppearancePreferencesView: View {
                             Slider(value: $model.hoverTintOpacity, in: 0...1)
                         }
                     } header: {
-                        Text("Effects")
+                        Text(NSLocalizedString("appearance.effects", comment: ""))
                     } footer: {
-                        Text("Adjust blur and tint intensity for the playback window.")
+                        Text(NSLocalizedString("appearance.effects.footer", comment: ""))
                     }
                 }
                 .formStyle(.grouped)
@@ -77,9 +77,9 @@ struct PlaybackAppearancePreferencesView: View {
                             Spacer()
                         }
                     } header: {
-                        Text("Preview")
+                        Text(NSLocalizedString("appearance.preview", comment: ""))
                     } footer: {
-                        Text("Live preview of the playback window with your current settings.")
+                        Text(NSLocalizedString("appearance.preview.footer", comment: ""))
                     }
                 }
                 .formStyle(.grouped)

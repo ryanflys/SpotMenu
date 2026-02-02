@@ -15,16 +15,16 @@ struct MusicPlayerPreferencesView: View {
             VStack(alignment: .leading, spacing: 20) {
                 Form {
                     Section {
-                        Picker("Preferred Player", selection: $model.preferredMusicApp) {
+                        Picker(NSLocalizedString("player.preferredPlayer", comment: ""), selection: $model.preferredMusicApp) {
                             ForEach(PreferredPlayer.allCases) { player in
                                 Text(player.displayName).tag(player)
                             }
                         }
                     } header: {
-                        Text("Music Player")
+                        Text(NSLocalizedString("player.musicPlayer", comment: ""))
                     } footer: {
                         Text(
-                            "\"Automatic\" selects the first available app at launch. If both Spotify and Apple Music are installed or running, Spotify is preferred."
+                            NSLocalizedString("player.musicPlayer.footer", comment: "")
                         )
                     }
                 }
@@ -34,7 +34,7 @@ struct MusicPlayerPreferencesView: View {
                 if playbackModel.isLikingImplemented {
                     Form {
                         Section {
-                            Toggle("Enable Track Liking", isOn: $model.likingEnabled)
+                            Toggle(NSLocalizedString("player.enableTrackLiking", comment: ""), isOn: $model.likingEnabled)
                                 .onChange(of: model.likingEnabled) { newValue in
                                     if newValue && !isSpotifyAuthenticated {
                                         LoginWindowManager.showLoginWindow(with: model)
@@ -43,11 +43,11 @@ struct MusicPlayerPreferencesView: View {
 
                             if model.likingEnabled {
                                 VStack(alignment: .leading, spacing: 8) {
-                                    Text("Spotify Client ID")
+                                    Text(NSLocalizedString("player.spotifyClientID", comment: ""))
                                         .font(.caption)
                                         .foregroundStyle(.secondary)
                                     TextField(
-                                        "Enter Spotify Client ID",
+                                        NSLocalizedString("player.enterSpotifyClientID", comment: ""),
                                         text: Binding(
                                             get: { model.spotifyClientID ?? "" },
                                             set: { newValue in
@@ -68,7 +68,7 @@ struct MusicPlayerPreferencesView: View {
                                             if isTestingSpotifyConnection {
                                                 ProgressView()
                                                     .scaleEffect(0.5)
-                                                Text("Testing")
+                                                Text(NSLocalizedString("player.testing", comment: ""))
                                             } else {
                                                 Image(systemName: connectionStatusIcon)
                                                 Text(connectionStatusText)
@@ -80,13 +80,13 @@ struct MusicPlayerPreferencesView: View {
 
                                     Spacer()
 
-                                    Button("Test Connection") {
+                                    Button(NSLocalizedString("player.testConnection", comment: "")) {
                                         testConnection()
                                     }
                                     .disabled(isTestingSpotifyConnection)
 
                                     if !isSpotifyAuthenticated {
-                                        Button("Log In to Spotify") {
+                                        Button(NSLocalizedString("player.logInToSpotify", comment: "")) {
                                             LoginWindowManager.showLoginWindow(with: model)
                                         }
                                     }
@@ -94,9 +94,9 @@ struct MusicPlayerPreferencesView: View {
                                 .padding(.top, 8)
                             }
                         } header: {
-                            Text("Spotify Integration")
+                            Text(NSLocalizedString("player.spotifyIntegration", comment: ""))
                         } footer: {
-                            Text("Enable liking tracks requires a Spotify Client ID. You can create one at developer.spotify.com.")
+                            Text(NSLocalizedString("player.spotifyIntegration.footer", comment: ""))
                         }
                     }
                     .formStyle(.grouped)
@@ -145,11 +145,11 @@ struct MusicPlayerPreferencesView: View {
 
     private var connectionStatusText: String {
         if isTestingSpotifyConnection {
-            return "Testing"
+            return NSLocalizedString("player.testing", comment: "")
         } else if let result = spotifyConnectionTestResult {
-            return result ? "Connected" : "Not Connected"
+            return result ? NSLocalizedString("player.connected", comment: "") : NSLocalizedString("player.notConnected", comment: "")
         } else {
-            return "Unknown"
+            return NSLocalizedString("player.unknown", comment: "")
         }
     }
 

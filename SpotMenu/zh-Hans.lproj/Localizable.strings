@@ -44,6 +44,69 @@
 "menuBar.preview" = "预览";
 "menuBar.preview.footer" = "显示最大宽度。实际宽度可能会根据内容而更小。";
 
+/* Music Player Preferences */
+"player.title" = "音乐播放器";
+"player.preferredPlayer" = "首选播放器";
+"player.musicPlayer" = "音乐播放器";
+"player.musicPlayer.footer" = "\"自动\"会在启动时选择第一个可用的应用。如果 Spotify 和 Apple Music 都已安装或正在运行，则优先选择 Spotify。";
+"player.spotify" = "Spotify";
+"player.appleMusic" = "Apple Music";
+"player.enableTrackLiking" = "启用曲目喜欢功能";
+"player.spotifyIntegration" = "Spotify 集成";
+"player.spotifyIntegration.footer" = "启用喜欢曲目功能需要 Spotify Client ID。您可以在 developer.spotify.com 创建一个。";
+"player.spotifyClientID" = "Spotify Client ID";
+"player.enterSpotifyClientID" = "输入 Spotify Client ID";
+"player.testing" = "测试中";
+"player.testConnection" = "测试连接";
+"player.logInToSpotify" = "登录 Spotify";
+"player.connected" = "已连接";
+"player.notConnected" = "未连接";
+"player.unknown" = "未知";
+
+/* Playback Appearance Preferences */
+"appearance.title" = "外观";
+"appearance.colors" = "颜色";
+"appearance.colors.footer" = "自定义播放窗口的配色方案。";
+"appearance.hoverTintColor" = "悬停着色颜色";
+"appearance.foregroundColor" = "前景颜色";
+"appearance.effects" = "效果";
+"appearance.effects.footer" = "调整播放窗口的模糊和着色强度。";
+"appearance.blurIntensity" = "模糊强度";
+"appearance.hoverTintOpacity" = "悬停着色不透明度";
+"appearance.preview" = "预览";
+"appearance.preview.footer" = "使用当前设置实时预览播放窗口。";
+
+/* Shortcuts Preferences */
+"shortcuts.title" = "快捷键";
+"shortcuts.playbackControls" = "播放控制";
+"shortcuts.playbackControls.footer" = "设置用于控制音乐播放的键盘快捷键。";
+"shortcuts.playPause" = "播放/暂停";
+"shortcuts.nextTrack" = "下一首";
+"shortcuts.previousTrack" = "上一首";
+"shortcuts.trackLiking" = "曲目喜欢";
+"shortcuts.trackLiking.footer" = "设置用于喜欢和取消喜欢曲目的键盘快捷键。";
+"shortcuts.likeTrack" = "喜欢曲目";
+"shortcuts.unlikeTrack" = "取消喜欢曲目";
+"shortcuts.toggleLike" = "切换喜欢";
+
+/* About Preferences */
+"about.title" = "关于";
+"about.version" = "版本 %@ (%@)";
+"about.supportDevelopment" = "支持开发";
+"about.supportMessage" = "SpotMenu 是免费且开源的。\n如果您喜欢它，请考虑支持我的咖啡基金\n这样我就可以继续开发更多有趣的项目。";
+"about.donatePayPal" = "通过 PayPal 捐赠";
+"about.description" = "在菜单栏中显示 Spotify 和 Apple Music";
+"about.builtWith" = "使用 SwiftUI 为 macOS 构建";
+"about.softwareUpdates" = "软件更新";
+"about.automaticallyCheckForUpdates" = "自动检查更新";
+"about.automaticallyDownloadUpdates" = "自动下载更新";
+"about.lastChecked" = "上次检查：";
+"about.never" = "从未";
+"about.checkForUpdatesNow" = "立即检查更新";
+"about.viewOnGitHub" = "在 GitHub 上查看";
+"about.website" = "网站";
+"about.madeBy" = "由 @kmikiy 用心制作";
+
 /* Common */
 "common.quit" = "退出 SpotMenu";
 "common.selectSection" = "选择一个部分";

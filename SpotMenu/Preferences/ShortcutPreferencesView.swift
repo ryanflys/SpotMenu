@@ -33,9 +33,9 @@ struct ShortcutPreferencesView: View {
                             }
                         }
                     } header: {
-                        Text("Playback Controls")
+                        Text(NSLocalizedString("shortcuts.playbackControls", comment: ""))
                     } footer: {
-                        Text("Set keyboard shortcuts for controlling music playback.")
+                        Text(NSLocalizedString("shortcuts.playbackControls.footer", comment: ""))
                     }
                 }
                 .formStyle(.grouped)
@@ -47,26 +47,26 @@ struct ShortcutPreferencesView: View {
                     Form {
                         Section {
                             HStack {
-                                Text("Like Track")
+                                Text(NSLocalizedString("shortcuts.likeTrack", comment: ""))
                                 Spacer()
                                 KeyboardShortcuts.Recorder(for: .likeTrack)
                             }
 
                             HStack {
-                                Text("Unlike Track")
+                                Text(NSLocalizedString("shortcuts.unlikeTrack", comment: ""))
                                 Spacer()
                                 KeyboardShortcuts.Recorder(for: .unlikeTrack)
                             }
 
                             HStack {
-                                Text("Toggle Like")
+                                Text(NSLocalizedString("shortcuts.toggleLike", comment: ""))
                                 Spacer()
                                 KeyboardShortcuts.Recorder(for: .toggleLike)
                             }
                         } header: {
-                            Text("Track Liking")
+                            Text(NSLocalizedString("shortcuts.trackLiking", comment: ""))
                         } footer: {
-                            Text("Set keyboard shortcuts for liking and unliking tracks.")
+                            Text(NSLocalizedString("shortcuts.trackLiking.footer", comment: ""))
                         }
                     }
                     .formStyle(.grouped)

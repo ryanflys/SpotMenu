@@ -44,6 +44,69 @@
 "menuBar.preview" = "Preview";
 "menuBar.preview.footer" = "Maximum width shown. Actual width may be smaller depending on content.";
 
+/* Music Player Preferences */
+"player.title" = "Music Player";
+"player.preferredPlayer" = "Preferred Player";
+"player.musicPlayer" = "Music Player";
+"player.musicPlayer.footer" = "\"Automatic\" selects the first available app at launch. If both Spotify and Apple Music are installed or running, Spotify is preferred.";
+"player.spotify" = "Spotify";
+"player.appleMusic" = "Apple Music";
+"player.enableTrackLiking" = "Enable Track Liking";
+"player.spotifyIntegration" = "Spotify Integration";
+"player.spotifyIntegration.footer" = "Enable liking tracks requires a Spotify Client ID. You can create one at developer.spotify.com.";
+"player.spotifyClientID" = "Spotify Client ID";
+"player.enterSpotifyClientID" = "Enter Spotify Client ID";
+"player.testing" = "Testing";
+"player.testConnection" = "Test Connection";
+"player.logInToSpotify" = "Log In to Spotify";
+"player.connected" = "Connected";
+"player.notConnected" = "Not Connected";
+"player.unknown" = "Unknown";
+
+/* Playback Appearance Preferences */
+"appearance.title" = "Appearance";
+"appearance.colors" = "Colors";
+"appearance.colors.footer" = "Customize the color scheme for the playback window.";
+"appearance.hoverTintColor" = "Hover Tint Color";
+"appearance.foregroundColor" = "Foreground Color";
+"appearance.effects" = "Effects";
+"appearance.effects.footer" = "Adjust blur and tint intensity for the playback window.";
+"appearance.blurIntensity" = "Blur Intensity";
+"appearance.hoverTintOpacity" = "Hover Tint Opacity";
+"appearance.preview" = "Preview";
+"appearance.preview.footer" = "Live preview of the playback window with your current settings.";
+
+/* Shortcuts Preferences */
+"shortcuts.title" = "Shortcuts";
+"shortcuts.playbackControls" = "Playback Controls";
+"shortcuts.playbackControls.footer" = "Set keyboard shortcuts for controlling music playback.";
+"shortcuts.playPause" = "Play / Pause";
+"shortcuts.nextTrack" = "Next Track";
+"shortcuts.previousTrack" = "Previous Track";
+"shortcuts.trackLiking" = "Track Liking";
+"shortcuts.trackLiking.footer" = "Set keyboard shortcuts for liking and unliking tracks.";
+"shortcuts.likeTrack" = "Like Track";
+"shortcuts.unlikeTrack" = "Unlike Track";
+"shortcuts.toggleLike" = "Toggle Like";
+
+/* About Preferences */
+"about.title" = "About";
+"about.version" = "Version %@ (%@)";
+"about.supportDevelopment" = "Support Development";
+"about.supportMessage" = "SpotMenu is free and open source.\nIf you enjoy it, consider fueling my coffee addiction\nso I can mass produce more questionable side projects.";
+"about.donatePayPal" = "Donate via PayPal";
+"about.description" = "Spotify & Apple Music in your menu bar";
+"about.builtWith" = "Built with SwiftUI for macOS";
+"about.softwareUpdates" = "Software Updates";
+"about.automaticallyCheckForUpdates" = "Automatically check for updates";
+"about.automaticallyDownloadUpdates" = "Automatically download updates";
+"about.lastChecked" = "Last checked:";
+"about.never" = "Never";
+"about.checkForUpdatesNow" = "Check for Updates Now";
+"about.viewOnGitHub" = "View on GitHub";
+"about.website" = "Website";
+"about.madeBy" = "Made with love by @kmikiy";
+
 /* Common */
 "common.quit" = "Quit SpotMenu";
 "common.selectSection" = "Select a section";

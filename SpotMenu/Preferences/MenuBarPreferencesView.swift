@@ -20,7 +20,7 @@ struct MenuBarPreferencesView: View {
             VStack(alignment: .leading, spacing: 20) {
                 Form {
                     Section {
-                        Toggle("Display Artist", isOn: Binding(
+                        Toggle(NSLocalizedString("menuBar.displayArtist", comment: ""), isOn: Binding(
                             get: { model.showArtist },
                             set: { newValue in
                                 withAnimation(.easeInOut(duration: 0.2)) {
@@ -30,11 +30,11 @@ struct MenuBarPreferencesView: View {
                         ))
 
                         if model.showArtist {
-                            Toggle("Hide Artist When Paused", isOn: $model.hideArtistWhenPaused)
+                            Toggle(NSLocalizedString("menuBar.hideArtistWhenPaused", comment: ""), isOn: $model.hideArtistWhenPaused)
                                 .transition(.opacity.combined(with: .move(edge: .top)))
                         }
 
-                        Toggle("Display Title", isOn: Binding(
+                        Toggle(NSLocalizedString("menuBar.displayTitle", comment: ""), isOn: Binding(
                             get: { model.showTitle },
                             set: { newValue in
                                 withAnimation(.easeInOut(duration: 0.2)) {
@@ -45,7 +45,7 @@ struct MenuBarPreferencesView: View {
 
                         if model.showTitle {
                             Picker(
-                                "Long-form Content",
+                                NSLocalizedString("menuBar.longFormContent", comment: ""),
                                 selection: $musicPlayerPreferencesModel
                                     .longFormTitleStyle
                             ) {
@@ -58,13 +58,13 @@ struct MenuBarPreferencesView: View {
                             }
                             .transition(.opacity.combined(with: .move(edge: .top)))
                             
-                            Toggle("Hide Title When Paused", isOn: $model.hideTitleWhenPaused)
+                            Toggle(NSLocalizedString("menuBar.hideTitleWhenPaused", comment: ""), isOn: $model.hideTitleWhenPaused)
                                 .transition(.opacity.combined(with: .move(edge: .top)))
                         }
                     } header: {
-                        Text("Text Display")
+                        Text(NSLocalizedString("menuBar.textDisplay", comment: ""))
                     } footer: {
-                        Text("Choose which text information to display in the menu bar.")
+                        Text(NSLocalizedString("menuBar.textDisplay.footer", comment: ""))
                     }
                 }
                 .formStyle(.grouped)
@@ -72,12 +72,12 @@ struct MenuBarPreferencesView: View {
 
                 Form {
                     Section {
-                        Toggle("Show Playing Icon", isOn: $model.showIsPlayingIcon)
+                        Toggle(NSLocalizedString("menuBar.showPlayingIcon", comment: ""), isOn: $model.showIsPlayingIcon)
 
                         if playbackModel.isLikingImplemented
                             && musicPlayerPreferencesModel.likingEnabled
                         {
-                            Toggle("Show Liked Icon", isOn: Binding(
+                            Toggle(NSLocalizedString("menuBar.showLikedIcon", comment: ""), isOn: Binding(
                                 get: { model.showIsLikedIcon },
                                 set: { newValue in
                                     model.showIsLikedIcon = newValue
@@ -90,7 +90,7 @@ struct MenuBarPreferencesView: View {
                             ))
                         }
 
-                        Toggle("Display App Icon", isOn: Binding(
+                        Toggle(NSLocalizedString("menuBar.displayAppIcon", comment: ""), isOn: Binding(
                             get: { model.showAppIcon },
                             set: { newValue in
                                 withAnimation(.easeInOut(duration: 0.2)) {
@@ -99,14 +99,14 @@ struct MenuBarPreferencesView: View {
                             }
                         ))
                     } header: {
-                        Text("Icons")
+                        Text(NSLocalizedString("menuBar.icons", comment: ""))
                     } footer: {
                         if !model.showAppIcon {
                             Text(
-                                "If nothing is currently visible based on your settings and playback status, the app icon will be shown as a fallback."
+                                NSLocalizedString("menuBar.icons.fallback", comment: "")
                             )
                         } else {
-                            Text("Choose which icons to display in the menu bar.")
+                            Text(NSLocalizedString("menuBar.icons.footer", comment: ""))
                         }
                     }
                 }
@@ -115,11 +115,11 @@ struct MenuBarPreferencesView: View {
 
                 Form {
                     Section {
-                        Toggle("Compact View", isOn: $model.compactView)
+                        Toggle(NSLocalizedString("menuBar.compactView", comment: ""), isOn: $model.compactView)
 
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
-                                Text("Max Width")
+                                Text(NSLocalizedString("menuBar.maxWidth", comment: ""))
                                 Spacer()
                                 Text("\(Int(model.maxStatusItemWidth)) pt")
                                     .foregroundStyle(.secondary)
@@ -132,9 +132,9 @@ struct MenuBarPreferencesView: View {
                             )
                         }
                     } header: {
-                        Text("Layout")
+                        Text(NSLocalizedString("menuBar.layout", comment: ""))
                     } footer: {
-                        Text("Adjust the maximum width for the menu bar item.")
+                        Text(NSLocalizedString("menuBar.layout.footer", comment: ""))
                     }
                 }
                 .formStyle(.grouped)
@@ -143,31 +143,31 @@ struct MenuBarPreferencesView: View {
                 Form {
                     Section {
                         if model.compactView {
-                            Picker("Font weight (top row)", selection: $model.fontWeightCompactTop) {
+                            Picker(NSLocalizedString("menuBar.fontWeight.topRow", comment: ""), selection: $model.fontWeightCompactTop) {
                                 ForEach(MenuBarFontWeight.allCases, id: \.self) { weight in
                                     Text(weight.rawValue.capitalized).tag(weight)
                                 }
                             }
 
-                            Picker("Font weight (bottom row)", selection: $model.fontWeightCompactBottom) {
+                            Picker(NSLocalizedString("menuBar.fontWeight.bottomRow", comment: ""), selection: $model.fontWeightCompactBottom) {
                                 ForEach(MenuBarFontWeight.allCases, id: \.self) { weight in
                                     Text(weight.rawValue.capitalized).tag(weight)
                                 }
                             }
                         } else {
-                            Picker("Font weight", selection: $model.fontWeightNormal) {
+                            Picker(NSLocalizedString("menuBar.fontWeight", comment: ""), selection: $model.fontWeightNormal) {
                                 ForEach(MenuBarFontWeight.allCases, id: \.self) { weight in
                                     Text(weight.rawValue.capitalized).tag(weight)
                                 }
                             }
                         }
                     } header: {
-                        Text("Font Weights")
+                        Text(NSLocalizedString("menuBar.fontWeights", comment: ""))
                     } footer: {
                         if model.compactView {
-                            Text("Adjust font weights for the top and bottom rows in compact view.")
+                            Text(NSLocalizedString("menuBar.fontWeights.footer.compact", comment: ""))
                         } else {
-                            Text("Adjust font weight for menu bar text in normal view.")
+                            Text(NSLocalizedString("menuBar.fontWeights.footer.normal", comment: ""))
                         }
                     }
                 }
@@ -194,9 +194,9 @@ struct MenuBarPreferencesView: View {
                             .frame(maxWidth: .infinity, alignment: .center)
                         }
                     } header: {
-                        Text("Preview")
+                        Text(NSLocalizedString("menuBar.preview", comment: ""))
                     } footer: {
-                        Text("Maximum width shown. Actual width may be smaller depending on content.")
+                        Text(NSLocalizedString("menuBar.preview.footer", comment: ""))
                     }
                 }
                 .formStyle(.grouped)

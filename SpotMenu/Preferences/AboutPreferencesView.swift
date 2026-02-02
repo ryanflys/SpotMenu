@@ -1,4 +1,3 @@
-import Sparkle
 import SwiftUI
 
 struct AboutPreferencesView: View {
@@ -9,12 +8,6 @@ struct AboutPreferencesView: View {
     private var buildNumber: String {
         Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Unknown"
     }
-
-    // Sparkle updater (shared instance)
-    private var updater: SPUUpdater { UpdaterManager.shared.updater }
-    @State private var automaticallyChecksForUpdates = false
-    @State private var automaticallyDownloadsUpdates = false
-    @State private var lastUpdateCheckDate: Date?
 
     var body: some View {
         ScrollView {
@@ -30,7 +23,7 @@ struct AboutPreferencesView: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
 
-                    Text("Version \(appVersion) (\(buildNumber))")
+                    Text(String(format: NSLocalizedString("about.version", comment: ""), appVersion, buildNumber))
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
@@ -41,10 +34,10 @@ struct AboutPreferencesView: View {
 
                 // Donation Section
                 VStack(spacing: 12) {
-                    Text("Support Development")
+                    Text(NSLocalizedString("about.supportDevelopment", comment: ""))
                         .font(.headline)
 
-                    Text("SpotMenu is free and open source.\nIf you enjoy it, consider fueling my coffee addiction\nso I can mass produce more questionable side projects.")
+                    Text(NSLocalizedString("about.supportMessage", comment: ""))
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
@@ -58,7 +51,7 @@ struct AboutPreferencesView: View {
                         HStack(spacing: 8) {
                             Image(systemName: "heart.fill")
                                 .foregroundStyle(.white)
-                            Text("Donate via PayPal")
+                            Text(NSLocalizedString("about.donatePayPal", comment: ""))
                         }
                         .padding(.horizontal, 16)
                         .padding(.vertical, 8)
@@ -73,75 +66,12 @@ struct AboutPreferencesView: View {
 
                 // Description
                 VStack(spacing: 8) {
-                    Text("Spotify & Apple Music in your menu bar")
+                    Text(NSLocalizedString("about.description", comment: ""))
                         .font(.headline)
 
-                    Text("Built with SwiftUI for macOS")
+                    Text(NSLocalizedString("about.builtWith", comment: ""))
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
-                }
-
-                Divider()
-                    .padding(.horizontal, 40)
-
-                // Software Updates Section
-                VStack(spacing: 12) {
-                    Text("Software Updates")
-                        .font(.headline)
-
-                    Toggle(
-                        "Automatically check for updates",
-                        isOn: Binding(
-                            get: { automaticallyChecksForUpdates },
-                            set: { newValue in
-                                automaticallyChecksForUpdates = newValue
-                                updater.automaticallyChecksForUpdates = newValue
-                            }
-                        )
-                    )
-                    .toggleStyle(.switch)
-
-                    Toggle(
-                        "Automatically download updates",
-                        isOn: Binding(
-                            get: { automaticallyDownloadsUpdates },
-                            set: { newValue in
-                                automaticallyDownloadsUpdates = newValue
-                                updater.automaticallyDownloadsUpdates = newValue
-                            }
-                        )
-                    )
-                    .toggleStyle(.switch)
-                    .disabled(!automaticallyChecksForUpdates)
-
-                    HStack {
-                        Text("Last checked:")
-                            .foregroundStyle(.secondary)
-                        Spacer()
-                        if let lastCheck = lastUpdateCheckDate {
-                            Text(lastCheck.formatted(date: .abbreviated, time: .shortened))
-                                .foregroundStyle(.secondary)
-                        } else {
-                            Text("Never")
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                    .font(.subheadline)
-
-                    Button("Check for Updates Now") {
-                        updater.checkForUpdates()
-                        // Update the displayed date after a short delay
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                            lastUpdateCheckDate = updater.lastUpdateCheckDate
-                        }
-                    }
-                    .buttonStyle(.borderedProminent)
-                }
-                .padding(.horizontal, 20)
-                .onAppear {
-                    automaticallyChecksForUpdates = updater.automaticallyChecksForUpdates
-                    automaticallyDownloadsUpdates = updater.automaticallyDownloadsUpdates
-                    lastUpdateCheckDate = updater.lastUpdateCheckDate
                 }
 
                 Divider()
@@ -156,7 +86,7 @@ struct AboutPreferencesView: View {
                     }) {
                         HStack(spacing: 6) {
                             Image(systemName: "link")
-                            Text("View on GitHub")
+                            Text(NSLocalizedString("about.viewOnGitHub", comment: ""))
                         }
                     }
                     .buttonStyle(.link)
@@ -168,7 +98,7 @@ struct AboutPreferencesView: View {
                     }) {
                         HStack(spacing: 6) {
                             Image(systemName: "globe")
-                            Text("Website")
+                            Text(NSLocalizedString("about.website", comment: ""))
                         }
                     }
                     .buttonStyle(.link)
@@ -177,7 +107,7 @@ struct AboutPreferencesView: View {
                 Spacer()
 
                 // Copyright
-                Text("Made with love by @kmikiy")
+                Text(NSLocalizedString("about.madeBy", comment: ""))
                     .font(.caption)
                     .foregroundStyle(.tertiary)
                     .padding(.bottom, 20)
